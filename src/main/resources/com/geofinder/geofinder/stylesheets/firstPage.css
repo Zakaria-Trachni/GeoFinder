@@ -1,0 +1,50 @@
+.root {
+    /*
+    -fx-background-color: radial-gradient(
+            center 50% 0%,
+            radius 150%,
+            #FFFFFF 0%,
+            #FFECE7 30%,
+            #FF8F6C 90%
+    );
+     */
+    -fx-background-color: radial-gradient(
+            center 50% 0%,
+            radius 150%,
+            #FFFFFF 0%,
+            #FFECE7 30%,
+            #FF8F6C 90%
+    );
+}
+
+.geofinder {
+    -fx-text-fill: #FF8F6C;
+    -fx-font-weight: bold;
+}
+
+.subheading {
+    -fx-font-weight: bold;
+    -fx-fill: #424242;
+}
+
+.description {
+    /* ... */
+}
+
+.getStarted {
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(to bottom, #FF8F6C, #FF5733);
+    -fx-font-family: 'Product Sans', sans-serif;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 15px 40px;
+    -fx-cursor: hand;
+    -fx-transition: all 0.5s ease-in-out;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 3, 3);
+}
+
+.getStarted:hover {
+    -fx-background-color: linear-gradient(to bottom, #FF5733, #FF8F6C);
+}

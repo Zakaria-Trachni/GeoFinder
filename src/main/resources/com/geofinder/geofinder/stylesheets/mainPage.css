@@ -1,0 +1,209 @@
+/* >> ------------------------------------- Map view styling ------------------------------------- */
+/* ********************** Layers choices menu ********************** */
+.layersVBox {
+    -fx-background-color: transparent;
+}
+.layersChoice {
+    -fx-border-width: 1.5px;
+    -fx-text-fill: #FF8F6C;
+    -fx-border-color: #FF8F6C;
+    -fx-border-radius: 5px;
+    -fx-background-color: white;
+    -fx-background-radius: 6px;
+}
+.layersChoice:hover {
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-background-color: #FF8F6C;
+}
+
+/* ********************** zoom icons styling ********************** */
+.zoomIcons {
+    /* -fx-background-color: #FF8F6C; */
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: lightGrey;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+.iconButton {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+.iconButton:hover {
+    -fx-background-color: rgb(169,169,169);
+}
+
+.searchRoundedIcon:hover, .gotoRoundedIcon:hover, .goBackIcon:hover {
+    -fx-cursor: hand;
+}
+
+/* >> ------------------------------------- Sidebar styling ------------------------------------- */
+.sidebar {
+    -fx-background-color: radial-gradient(
+            center 50% 0%,
+            radius 150%,
+            #FFFFFF 0%,
+            #FFECE7 30%,
+            #FF8F6C 90%
+    );
+}
+
+.buttonsOptionsContainer {
+    -fx-background-color: white;
+    -fx-border-radius: 8;
+    -fx-border-width: 3px;
+    -fx-border-color: #FF8F6C;
+    -fx-background-radius: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 3, 3);
+}
+
+/* Shared style for all action buttons */
+.action-button {
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-font-size: 16px;
+    -fx-border-radius: 8;
+    -fx-border-width: 2;
+    -fx-background-insets: 0;
+    -fx-background-radius: 8;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0.2, 0, 2);
+}
+
+.saveToDB {
+    -fx-text-fill: #FFAA33;
+    -fx-border-color: #FFAA33;
+}
+
+.showDB {
+    -fx-text-fill: #FF8F6C;
+    -fx-border-color: #FF8F6C;
+}
+
+.exportCSV {
+    -fx-text-fill: green;
+    -fx-border-color: green;
+}
+
+.clearAll {
+    -fx-text-fill: #FF3B3B;
+    -fx-border-color: #FF3B3B;
+}
+
+.saveToDB:hover {
+    -fx-background-color: rgba(255, 170, 51, 0.1); /* light orange tint */
+    -fx-cursor: hand;
+}
+
+.showDB:hover {
+    -fx-background-color: rgba(255, 143, 108, 0.1); /* coral tint */
+    -fx-cursor: hand;
+}
+
+.exportCSV:hover {
+    -fx-background-color: rgba(0, 128, 0, 0.1); /* green tint */
+    -fx-cursor: hand;
+}
+
+.clearAll:hover {
+    -fx-background-color: rgba(255, 59, 59, 0.1); /* soft red tint */
+    -fx-cursor: hand;
+}
+
+
+/* ------------------------------------- Main Sidebar styling ------------------------------------- */
+.geofinder {
+    -fx-text-fill: #FF8F6C;
+    -fx-font-weight: bold;
+}
+
+.locationChoicesContainer {
+    -fx-border-radius: 8;
+    -fx-border-width: 3px;
+    -fx-border-color: #FF8F6C;
+    -fx-background-radius: 12px;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 3, 3);
+}
+.locationChoice {
+    -fx-font-size: 18px;
+    -fx-text-fill: #333333;
+    -fx-padding: 6 8 6 8;
+    -fx-background-color: white;
+    -fx-border-color: #FF8F6C;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-border-width: 1.5;
+}
+
+.locationChoice:hover {
+    -fx-background-color: #FFF1ED;
+    -fx-cursor: hand;
+}
+.locationChoice:selected .box {
+    -fx-background-color: #FF8F6C;
+    -fx-border-color: #FF8F6C;
+}
+.locationChoice .box {
+    -fx-background-color: white;
+    -fx-border-color: #FF8F6C;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 3;
+}
+.locationChoice .mark {
+    -fx-background-color: white;
+}
+
+/* ------------------------------------- goto Sidebar styling ------------------------------------- */
+/* SearchField styling is shared with all textFields on the app */
+.searchTextField {
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}
+.searchContainer {
+    -fx-border-width: 2px;
+    -fx-border-color: #FF8F6C;
+    -fx-background-color: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 6px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+
+.gotoSearchButton {
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(to bottom, #FF8F6C, #FF5733);
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+    -fx-transition: all 0.5s ease-in-out;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 3, 3);
+}
+.gotoSearchButton:hover {
+    -fx-background-color: linear-gradient(to bottom, #FF5733, #FF8F6C);
+}
+
+.weatherInfos {
+    -fx-border-radius: 8;
+    -fx-border-width: 5px;
+    -fx-border-color: #FF8F6C;
+    -fx-background-radius: 12px;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 3, 3);
+}
+
+.distanceInfosContainer {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-transition: all 0.5s ease-in-out;
+    -fx-background-color: linear-gradient(to bottom, #FF8F6C, #FF5733);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 3, 3);
+}
+
+.walkingIcon:hover, .cyclingIcon:hover, .drivingIcon:hover{
+    -fx-cursor: hand;
+}
