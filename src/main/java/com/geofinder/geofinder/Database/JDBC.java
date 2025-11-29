@@ -8,7 +8,7 @@ public class JDBC {
 
     private JDBC(){
         try{
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/locations_schema", "root", "Zakaria.19");
+            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/locations_schema", "root", "DBpassword");
             System.out.println("Connected to database 100%");
         } catch (Exception e){
             System.out.println(e.getMessage());
